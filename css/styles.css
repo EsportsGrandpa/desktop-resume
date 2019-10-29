@@ -1,0 +1,55 @@
+.fluid-container {
+  min-height: 100vh;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.my-row {
+  height: 45vh;
+}
+
+.my-col {
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1% 0;
+}
+
+.effect {
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+}
+
+.effect::after {
+  content: '';
+  width: 0%;
+  height: 7px;
+  color: #000000;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.effect:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+.middle-row {
+  height: 10vh;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
