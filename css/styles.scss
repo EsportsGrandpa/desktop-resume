@@ -15,27 +15,28 @@
     justify-content: center;
     align-items: center;
     margin: 1% 0;
+    .effect{
+        text-decoration: none;
+        position: relative;
+        color: #000000;
+    }
+    .effect::before{
+        content:'';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0; 
+        left: 0;
+        background-color: #000000;
+        transform-origin: center center;
+        transition: transform 0.25s ease-out;
+    }
+    .effect:hover::before{
+        transform: scaleX(1);
+    }
 }
-.effect{
-    text-decoration: none;
-    position: relative;
-    color: #000000;
-}
-.effect::after{
-    content:'';
-    width: 0%;
-    height: 7px;
-    color: #000000;
-    position: absolute;
-    bottom: 0%; 
-    left: 50%;
-    border-radius: 10px;
-    transition: all 500ms ease;
-}
-.effect:hover::after{
-    left: 0%;
-    width: 100%;
-}
+
 
 .middle-row{
     height: 10vh;
