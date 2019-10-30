@@ -1,5 +1,10 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .fluid-container {
-  min-height: 100vh;
+  height: 100vh;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
   font-family: 'Montserrat', sans-serif;
@@ -8,6 +13,7 @@
 
 .my-row {
   height: 45vh;
+  width: 100vw;
 }
 
 .my-col {
@@ -55,10 +61,16 @@
 
 .middle-row {
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .popup {
+  display: none;
   position: fixed;
   width: 80vw;
   height: 80vh;
