@@ -48,27 +48,6 @@ html{
     text-align: center;
     flex-wrap: wrap;
 }
-.popup{
-    display: none;
-    position: fixed;
-    width: 80vw;
-    height: 80vh;
-    left: 12.5%;
-    top: 12.5%;
-    background-color: green;
-    z-index: 2;
-    .center{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%; 
-            .close{
-                position: absolute;
-                top: 2%;
-                right: 2%;
-            } 
-    }
-}
 
 [id^=modal] {
     display: none;
@@ -77,9 +56,16 @@ html{
     height: 80vh;
     left: 12.5%;
     top: 12.5%;
-    background-color: green;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
     z-index: 1;
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
     }
+}
   #modal1:target {
     display: block;
     }
@@ -109,4 +95,5 @@ html{
     position: absolute;
     top: 2%;
     right: 2%;
+    color: #000000;
     }

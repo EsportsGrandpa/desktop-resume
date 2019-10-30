@@ -72,18 +72,19 @@ html {
       flex-wrap: wrap;
 }
 
-.popup {
+[id^=modal] {
   display: none;
   position: fixed;
   width: 80vw;
   height: 80vh;
   left: 12.5%;
   top: 12.5%;
-  background-color: green;
-  z-index: 2;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  z-index: 1;
 }
 
-.popup .center {
+[id^=modal] .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,23 +95,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-}
-
-.popup .center .close {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-}
-
-[id^=modal] {
-  display: none;
-  position: fixed;
-  width: 80vw;
-  height: 80vh;
-  left: 12.5%;
-  top: 12.5%;
-  background-color: green;
-  z-index: 1;
 }
 
 #modal1:target {
@@ -149,5 +133,6 @@ html {
   position: absolute;
   top: 2%;
   right: 2%;
+  color: #000000;
 }
 /*# sourceMappingURL=styles.css.map */
