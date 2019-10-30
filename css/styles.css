@@ -5,6 +5,24 @@ html {
   margin: 0;
 }
 
+h1 {
+  margin: 0.33rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: RGBA(186, 136, 136, 0.5);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: RGBA(136, 186, 186, 0.6);
+}
+
+p {
+  text-transform: none;
+  font-size: 1rem;
+}
+
 .fluid-container {
   height: 100vh;
   border-left: 1px solid #000000;
@@ -13,8 +31,12 @@ html {
   text-transform: uppercase;
 }
 
+.row {
+  margin: 0;
+}
+
 .my-row {
-  height: 45vh;
+  min-height: 45vh;
   width: 100vw;
 }
 
@@ -30,6 +52,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
+  min-height: 20vh;
 }
 
 .my-col .effect {
@@ -61,6 +84,39 @@ html {
           transform: scaleX(1);
 }
 
+.core .left-text {
+  text-align: center;
+}
+
+.core .left-text p {
+  font-size: 0.9rem;
+}
+
+.core .linkedinPict {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.core .linkedinPict img {
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+.core .right-text {
+  text-align: center;
+}
+
+.core .right-text h4 {
+  color: RGBA(136, 186, 186, 0.6);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.core .right-text .name {
+  margin-top: 2px;
+}
+
 .middle-row {
   height: 10vh;
   max-width: 100vw;
@@ -77,14 +133,16 @@ html {
   position: fixed;
   width: 80vw;
   height: 80vh;
-  left: 12.5%;
-  top: 12.5%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   border: 1px solid #000000;
   z-index: 1;
 }
 
-[id^=modal] .center {
+[id^=modal] .centerDiv .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
