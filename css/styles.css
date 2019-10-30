@@ -84,37 +84,65 @@ p {
           transform: scaleX(1);
 }
 
-.core .left-text {
+.presentation .left-text {
   text-align: center;
 }
 
-.core .left-text p {
+.presentation .left-text p {
   font-size: 0.9rem;
 }
 
-.core .linkedinPict {
+.presentation .linkedinPict {
   margin: 0 auto;
   text-align: center;
 }
 
-.core .linkedinPict img {
+.presentation .linkedinPict img {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
 }
 
-.core .right-text {
+.presentation .right-text {
   text-align: center;
 }
 
-.core .right-text h4 {
+.presentation .right-text h4 {
   color: RGBA(136, 186, 186, 0.6);
+  text-decoration: underline;
   font-size: 1rem;
   margin: 0;
 }
 
-.core .right-text .name {
+.presentation .right-text .name {
   margin-top: 2px;
+}
+
+.skillsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skillsDiv .skillset {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.skillsDiv .skillset li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .middle-row {

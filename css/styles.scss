@@ -65,7 +65,7 @@ p{
     }
 }
 
-.core{
+.presentation{
     .left-text{
         text-align: center;
         p{
@@ -85,6 +85,7 @@ p{
         text-align: center;
         h4{
             color: RGBA(136,186,186, 0.6);
+            text-decoration: underline;
             font-size: 1rem;
             margin: 0;
         }
@@ -92,6 +93,22 @@ p{
             margin-top: 2px;
         }
     }
+}
+
+.skillsDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .skillset{
+        width: 50%;
+        margin: 0 auto;
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+    
+        }
+    } 
 }
 
 .middle-row{
