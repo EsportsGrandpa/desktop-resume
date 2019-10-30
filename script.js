@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    $(".effect").on("click", function (e) {
+    $(".clickMe").on("click", function (e) {
         $(".popup").css("display", "block");
     });
-    $(".center").on("click", function () {
+    $(".center").on("click", function (e) {
         $(".popup").css("display", "none");
     });
+
 });
