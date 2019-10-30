@@ -118,6 +118,41 @@ p{
     flex-wrap: wrap;
 }
 
+.templatePict{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        .imgOfHead{
+            padding: 2%;
+            max-width: 75%;
+            height: auto;
+            transition: transform .5s ease;
+        }
+    }
+    .box:hover img{
+        transform: scale(1.2);
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width:  50%;
+
+    .submit{
+        max-width: 50%;
+        margin: 5% auto;
+    }
+}
+
 [id^=modal] {
     display: none;
     position: fixed;
@@ -130,15 +165,13 @@ p{
     border: 1px solid #000000;
     z-index: 1;
     .centerDiv{
-       
-        
         .center{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%; 
-        }
-    }  
+        } 
+    }
 }
   #modal1:target {
     display: block;
