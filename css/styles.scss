@@ -48,12 +48,20 @@ p, span{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-.row{
-    margin: 0;
-}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+  > [class^="col-"],
+  > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
 .my-row{
     min-height: 45vh;
-    width: 100vw;
+    // width: 100vw;
 }
 .my-col{
     border: 1px solid #000000;
@@ -184,6 +192,7 @@ form{
     border: 1px solid #000000;
     z-index: 1;
     .centerDiv{
+        min-height: 80vh;
         .center{
             display: flex;
             justify-content: center;

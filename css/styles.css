@@ -50,13 +50,19 @@ p, span {
   text-transform: uppercase;
 }
 
-.row {
-  margin: 0;
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .my-row {
   min-height: 45vh;
-  width: 100vw;
 }
 
 .my-col {
@@ -244,6 +250,10 @@ form .submit {
   background-color: #FFFFFF;
   border: 1px solid #000000;
   z-index: 1;
+}
+
+[id^=modal] .centerDiv {
+  min-height: 80vh;
 }
 
 [id^=modal] .centerDiv .center {
