@@ -1,4 +1,3 @@
-@import "variables";
 
 html{
     box-sizing: border-box;
@@ -17,34 +16,33 @@ html{
     }
 }
 
-// @media (min-width: 992px){
-//     html{
-//         font-size: 18px;
-//     }
-// }
+@media (max-width: 768px) {
+    .linkedinPict{
+        img{
+            max-height: 100px;
+            margin-bottom: 0.5rem;
+        }
+    }
+ }
 
-// @media (min-width:1200px){
-//     html{
-//         font-size: 20px;
-//     }
-// }
-
-h2{
+h1{
     margin: 0.33rem 0;
     text-align: center;
     font-size: 1.5rem;
     color: RGBA(186,136,136, 0.5);
+    padding-top: 1rem;
 }
 
-h4{
+h2{
     text-align: center;
     font-size: 1rem;
     color: RGBA(136,186,186, 0.6);
+    padding: 0 1rem;
 }
 
-p{
+p, span{
     text-transform: none;
-    // font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .fluid-container{
@@ -105,7 +103,7 @@ p{
     .left-text{
         text-align: center;
         width: 33%;
-        padding: 2%;
+        padding: 1%;
         p{
             font-size: 0.9rem;
         }
@@ -116,14 +114,15 @@ p{
         width: 33%;
         img{
             border-radius: 50%;
-            // max-width: 100%;
-            // height: auto;
+            max-width: 100%;
+            height: auto;
         }
     }
     .right-text{
         text-align: center;
+        flex-wrap: wrap;
         width: 33%;
-        h4{
+        h2{
             color: RGBA(136,186,186, 0.6);
             text-decoration: underline;
             font-size: 1rem;
@@ -142,8 +141,7 @@ p{
     min-height: 60vh;
     .skillset{
         align-items: center;
-
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
         li{
             list-style-type: none;
@@ -204,7 +202,8 @@ form{
     display: none;
     position: fixed;
     width: 80vw;
-    height: 80vh;
+    min-height: 80vh;
+    max-height: 90vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -252,3 +251,10 @@ form{
     right: 2%;
     color: #000000;
     }
+
+    $enable-responsive-font-sizes: true;
+
+    $h1-font-size: 2rem;
+    $h2-font-size: 1.75rem;
+
+    @import "../node_modules/bootstrap/scss/bootstrap";

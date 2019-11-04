@@ -1,0 +1,29 @@
+{
+  "name": "desktop-resume",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsportsGrandpa/desktop-resume.git"
+  },
+  "author": "Matthias Boeckaert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EsportsGrandpa/desktop-resume/issues"
+  },
+  "homepage": "https://github.com/EsportsGrandpa/desktop-resume#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "sass": "^1.23.3"
+  },
+  "devDependencies": {},
+  "description": "my own resume",
+  "keywords": [
+    "resume",
+    "front-end",
+    "developer"
+  ]
+}
