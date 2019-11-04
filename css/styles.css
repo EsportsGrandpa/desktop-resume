@@ -3,43 +3,36 @@ html {
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 15px;
 }
 
-@media (min-width: 576px) {
-  html {
-    font-size: 16px;
+@media (max-width: 576px) {
+  .presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .presentation .left-text {
+    min-width: 100%;
   }
 }
 
-@media (min-width: 992px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-h1 {
+h2 {
   margin: 0.33rem 0;
   text-align: center;
-  font-size: 1.5rem;
   color: RGBA(186, 136, 136, 0.5);
 }
 
-h3 {
+h4 {
   text-align: center;
-  font-size: 1rem;
   color: RGBA(136, 186, 186, 0.6);
 }
 
-p, span {
+p {
   text-transform: none;
-  font-size: 0.8rem;
 }
 
 .fluid-container {
@@ -109,8 +102,20 @@ p, span {
           transform: scaleX(1);
 }
 
+.presentation {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .presentation .left-text {
   text-align: center;
+  width: 33%;
+  padding: 2%;
 }
 
 .presentation .left-text p {
@@ -120,16 +125,18 @@ p, span {
 .presentation .linkedinPict {
   margin: 0 auto;
   text-align: center;
+  width: 33%;
 }
 
 .presentation .linkedinPict img {
   border-radius: 50%;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
 .presentation .right-text {
   text-align: center;
+  width: 33%;
 }
 
 .presentation .right-text h4 {
@@ -153,9 +160,13 @@ p, span {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 60vh;
 }
 
 .skillsDiv .skillset {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   margin: 0 auto;
 }
@@ -168,6 +179,10 @@ p, span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.table {
+  font-size: 0.8rem;
 }
 
 .middle-row {

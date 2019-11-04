@@ -1,44 +1,50 @@
+@import "variables";
+
 html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    // font-size: 15px;
 }
 
-@media (min-width: 576px){
-    html{
-        font-size: 16px
+@media (max-width: 576px){
+    .presentation{
+    display: flex;
+    flex-direction: column;
+    .left-text{
+        min-width: 100%;
+        }
     }
 }
 
-@media (min-width: 992px){
-    html{
-        font-size: 18px;
-    }
-}
+// @media (min-width: 992px){
+//     html{
+//         font-size: 18px;
+//     }
+// }
 
-@media (min-width:1200px){
-    html{
-        font-size: 20px;
-    }
-}
+// @media (min-width:1200px){
+//     html{
+//         font-size: 20px;
+//     }
+// }
 
-h1{
+h2{
     margin: 0.33rem 0;
     text-align: center;
     font-size: 1.5rem;
     color: RGBA(186,136,136, 0.5);
 }
 
-h3{
+h4{
     text-align: center;
     font-size: 1rem;
     color: RGBA(136,186,186, 0.6);
 }
 
-p, span{
+p{
     text-transform: none;
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
 }
 
 .fluid-container{
@@ -93,8 +99,13 @@ p, span{
 }
 
 .presentation{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
     .left-text{
         text-align: center;
+        width: 33%;
+        padding: 2%;
         p{
             font-size: 0.9rem;
         }
@@ -102,14 +113,16 @@ p, span{
     .linkedinPict{
         margin: 0 auto;
         text-align: center;
+        width: 33%;
         img{
             border-radius: 50%;
-            max-width: 50%;
-            height: auto;
+            // max-width: 100%;
+            // height: auto;
         }
     }
     .right-text{
         text-align: center;
+        width: 33%;
         h4{
             color: RGBA(136,186,186, 0.6);
             text-decoration: underline;
@@ -126,7 +139,10 @@ p, span{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-height: 60vh;
     .skillset{
+        align-items: center;
+
         width: 50%;
         margin: 0 auto;
         li{
@@ -135,6 +151,10 @@ p, span{
             justify-content: space-between;
         }
     } 
+}
+
+.table{
+    font-size: 0.8rem;
 }
 
 .middle-row{
