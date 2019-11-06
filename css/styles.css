@@ -3,9 +3,13 @@ html {
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 15px;
 }
 
 @media (max-width: 576px) {
+  p {
+    font-size: 0.5rem;
+  }
   .presentation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21,6 +25,15 @@ html {
 }
 
 @media (max-width: 768px) {
+  .presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .linkedinPict img {
     max-height: 100px;
     margin-bottom: 0.5rem;
@@ -112,6 +125,10 @@ p, span {
 .my-col .effect:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.horizontal {
+  margin: 0 0.5rem;
 }
 
 .presentation {

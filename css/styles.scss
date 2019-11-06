@@ -3,10 +3,13 @@ html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    // font-size: 15px;
+    font-size: 15px;
 }
 
 @media (max-width: 576px){
+    p{
+        font-size: 0.5rem;
+    }
     .presentation{
     display: flex;
     flex-direction: column;
@@ -17,6 +20,10 @@ html{
 }
 
 @media (max-width: 768px) {
+    .presentation{
+        display: flex;
+        flex-direction: column;
+    }
     .linkedinPict{
         img{
             max-height: 100px;
@@ -94,6 +101,10 @@ p, span{
     .effect:hover::before{
         transform: scaleX(1);
     }
+}
+
+.horizontal{
+    margin: 0 0.5rem;
 }
 
 .presentation{
