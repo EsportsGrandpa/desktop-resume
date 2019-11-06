@@ -6,20 +6,17 @@ html {
   font-size: 15px;
 }
 
+@media (max-width: 320px) and (max-height: 570px) {
+  .linkedinPict img {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   p {
     font-size: 0.5rem;
   }
-  .presentation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .presentation .left-text {
+  .left-text {
     min-width: 100%;
   }
 }
@@ -37,6 +34,9 @@ html {
   .linkedinPict img {
     max-height: 100px;
     margin-bottom: 0.5rem;
+  }
+  .left-text {
+    min-width: 100%;
   }
 }
 
@@ -160,7 +160,7 @@ p, span {
 .presentation .linkedinPict img {
   border-radius: 50%;
   max-width: 100%;
-  height: auto;
+  max-height: auto;
 }
 
 .presentation .right-text {
